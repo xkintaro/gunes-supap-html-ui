@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="88.87" viewBox="0 0 217 88.87">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_193" data-name="Rectangle 193" width="81.954" height="88.87" transform="translate(0 0)" fill="#d8000c"/>
+    </clipPath>
+  </defs>
+  <g id="Group_174" data-name="Group 174" transform="translate(-215 -964.43)">
+    <text id="YILLIK_GÜNEŞ_TECRÜBESİ" data-name="YILLIK
+GÜNEŞ
+TECRÜBESİ" transform="translate(312 993)" fill="#d8000c" font-size="16" font-family="HostGrotesk-Light, Host Grotesk" font-weight="300" letter-spacing="0.3em"><tspan x="0" y="0">YILLIK</tspan><tspan x="0" y="21">GÜNEŞ</tspan><tspan x="0" y="42">TECRÜBESİ</tspan></text>
+    <g id="Group_172" data-name="Group 172" transform="translate(215 964.428)">
+      <g id="Group_171" data-name="Group 171" transform="translate(0 0.002)" clip-path="url(#clip-path)">
+        <path id="Path_2428" data-name="Path 2428" d="M36.48,43.837a8.556,8.556,0,1,1-8.558,8.556,8.558,8.558,0,0,1,8.558-8.556m17.863,8.556A17.864,17.864,0,1,0,36.48,70.256,17.866,17.866,0,0,0,54.343,52.393M22.765,18.581,31.618.043,21.256.008,3.117,37.364l.093.045,8.253,4.075ZM9.307,52.292H0v.1A36.479,36.479,0,1,0,43.354,16.562L46.92,9.338l30.447.149L81.954.2,51.5.052,41.146,0,36.564,9.287l-3.341,6.769-5.182,10.5a27.138,27.138,0,0,1,8.439-1.336q1.285,0,2.542.117A27.173,27.173,0,1,1,9.307,52.393Z" transform="translate(0 -0.001)" fill="#d8000c" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

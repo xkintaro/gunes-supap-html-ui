@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medya</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="relative z-[var(--navbar-z)] h-[var(--navbar-h)] w-full flex justify-between items-center">
+    <div class="custom-container flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="assets/logo.svg" alt="Logo" />
+      </a>
+
+      <!-- Mobil menü butonu -->
+      <button id="menu-toggle" class="xl:hidden text-[var(--c5)] text-3xl w-10 h-10">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Desktop menü -->
+      <div class="hidden xl:flex space-x-5 2xl:space-x-10 items-center">
+        <a href="index.html" class="text-[var(--c5)] uppercase text-md font-normal text-shadow-2xs">Ana Sayfa</a>
+        <a href="corporate.html" class="text-[var(--c5)] uppercase text-md font-normal text-shadow-2xs">Kurumsal</a>
+        <a href="products.html" class="text-[var(--c5)] uppercase text-md font-normal text-shadow-2xs">Ürünler</a>
+        <a href="media.html" class="text-[var(--c5)] uppercase text-md font-normal text-shadow-2xs">Medya</a>
+        <a href="contact.html" class="text-[var(--c5)] uppercase text-md font-normal text-shadow-2xs">İletişim</a>
+
+        <!-- Dil seçim dropdown -->
+        <div id="dropdown-root" class="relative">
+          <button id="dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu"
+            class="flex items-center justify-center w-10 h-10 border border-[var(--c1)] border-solid rounded-full cursor-pointer hover:border-[var(--c5)]">
+            <img id="dropdown-caret" src="assets/flags/turkey.webp" class="w-6 h-6 rounded-full object-cover"
+              alt="Flag" />
+          </button>
+
+          <div id="dropdown-menu" role="menu" aria-labelledby="dropdown-btn"
+            class="origin-top-right absolute right-0 mt-2 w-26 rounded-full bg-[var(--c1)] flex space-x-2 items-center justify-center p-2 transform opacity-0 scale-95 pointer-events-none transition-all duration-150">
+            <img role="menuitem" src="assets/flags/germany.webp" alt="#"
+              class="w-6 h-6 rounded-full object-cover cursor-pointer border border-solid border-[var(--c2)]" />
+            <img role="menuitem" src="assets/flags/russia.webp" alt="#"
+              class="w-6 h-6 rounded-full object-cover cursor-pointer border border-solid border-[var(--c2)]" />
+            <img role="menuitem" src="assets/flags/united-kingdom.webp" alt="#"
+              class="w-6 h-6 rounded-full object-cover cursor-pointer border border-solid border-[var(--c2)]" />
+          </div>
+        </div>
+
+        <!-- Arama alanı -->
+        <div class="flex rounded-md overflow-hidden bg-[var(--c1)]/90 text-[var(--c5)] h-10">
+          <input type="text" placeholder="Subap Seçim Aracı" autocomplete="off"
+            class="pl-2.5 border-none outline-none bg-transparent flex-1 h-full text-inherit" />
+          <button class="border-none outline-none bg-transparent w-10 h-full text-inherit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBİL OFFCANVAS MENÜ -->
+  <div id="overlay" class="fixed inset-0 z-[calc(2+var(--navbar-z))] bg-black/50 backdrop-blur-xs hidden"></div>
+  <div id="offcanvas-menu"
+    class="fixed top-0 right-0 z-[calc(2+var(--navbar-z))] h-full w-64 bg-[var(--c1)] transform translate-x-full transition-transform duration-300">
+    <div class="p-4 border-b flex justify-between items-center">
+      <button id="close-menu" class="xl:hidden text-[var(--c5)] text-3xl w-10 h-10">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="flex flex-col p-4 space-y-3">TEST</div>
+  </div>
+
+  <!-- HEADER BÖLÜMÜ-->
+  <section class="custom-container custom-site-gap">
+    <p class="text-xl xl:text-3xl text-[var(--c5)] xl:mb-2">
+      Bizden İçerikler
+    </p>
+    <h1 class="text-3xl xl:text-7xl text-[var(--c4)] font-bold">Medya</h1>
+  </section>
+
+  <!-- HABERLER BÖLÜMÜ-->
+  <section class="custom-container custom-site-gap">
+    <h1 class="text-2xl lg:text-4xl text-[var(--c4)] font-bold mb-5">
+      Haberler
+    </h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-b border-solid border-[var(--c3)]/50 pb-10">
+      <div class="">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="w-full aspect-[4/3] rounded object-cover border border-solid border-[var(--c2)]" />
+        <h2 class="text-[var(--c4)] text-xl md:text-2xl xl:text-4xl font-bold my-2 xl:my-8">
+          Haber Başlığı 1
+        </h2>
+        <p class="text-[var(--c3)] xl:text-xl">
+          Güneş Motor Supapları olarak, 65 yılı aşkın köklü tecrübemiz,
+          yenilikçi vizyonumuz ve modern üretim altyapımızla, her marka dizel
+          ve benzinli araç için yüksek kaliteli supap üretimi
+          gerçekleştiriyoruz. Kuruluşumuzdan bu yana…
+        </p>
+      </div>
+      <div class="">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="w-full aspect-[4/3] rounded object-cover border border-solid border-[var(--c2)]" />
+        <h2 class="text-[var(--c4)] text-xl md:text-2xl xl:text-4xl font-bold my-2 xl:my-8">
+          Haber Başlığı 1
+        </h2>
+        <p class="text-[var(--c3)] xl:text-xl">
+          Güneş Motor Supapları olarak, 65 yılı aşkın köklü tecrübemiz,
+          yenilikçi vizyonumuz ve modern üretim altyapımızla, her marka dizel
+          ve benzinli araç için yüksek kaliteli supap üretimi
+          gerçekleştiriyoruz. Kuruluşumuzdan bu yana…
+        </p>
+      </div>
+      <div class="">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="w-full aspect-[4/3] rounded object-cover border border-solid border-[var(--c2)]" />
+        <h2 class="text-[var(--c4)] text-xl md:text-2xl xl:text-4xl font-bold my-2 xl:my-8">
+          Haber Başlığı 1
+        </h2>
+        <p class="text-[var(--c3)] xl:text-xl">
+          Güneş Motor Supapları olarak, 65 yılı aşkın köklü tecrübemiz,
+          yenilikçi vizyonumuz ve modern üretim altyapımızla, her marka dizel
+          ve benzinli araç için yüksek kaliteli supap üretimi
+          gerçekleştiriyoruz. Kuruluşumuzdan bu yana…
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOTOĞRAFLAR BÖLÜMÜ-->
+  <section class="custom-container custom-site-gap">
+    <h1 class="text-2xl lg:text-4xl text-[var(--c4)] font-bold mb-5">
+      Fotoğraflar
+    </h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-b border-solid border-[var(--c3)]/50 pb-10">
+      <div class="aspect-[4/3]">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="size-full rounded object-cover border border-solid border-[var(--c1)]" />
+      </div>
+      <div class="aspect-[4/3]">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="size-full rounded object-cover border border-solid border-[var(--c1)]" />
+      </div>
+      <div class="aspect-[4/3]">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="size-full rounded object-cover border border-solid border-[var(--c1)]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VİDEOLAR BÖLÜMÜ-->
+  <section class="custom-container custom-site-gap">
+    <h1 class="text-2xl lg:text-4xl text-[var(--c4)] font-bold mb-5">
+      Videolar
+    </h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="aspect-[4/3]">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="size-full rounded object-cover border border-solid border-[var(--c1)]" />
+      </div>
+      <div class="aspect-[4/3]">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="size-full rounded object-cover border border-solid border-[var(--c1)]" />
+      </div>
+      <div class="aspect-[4/3]">
+        <img src="assets/img/bg-4.webp" alt="#"
+          class="size-full rounded object-cover border border-solid border-[var(--c1)]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VİZYON MİSYON BÖLÜMÜ-->
+  <section class="custom-container custom-site-gap">
+    <div class="grid sm:grid-cols-2 gap-8">
+      <div class="">
+        <div class="bg-[var(--c2)] rounded p-8 h-full flex">
+          <div class="grid xl:grid-cols-2 gap-5">
+            <div class="">
+              <div
+                class="bg-[var(--c4)] rounded flex justify-center items-center text-center w-fit aspect-square p-4 md:p-8 text-2xl md:text-4xl text-[var(--c1)] mb-8">
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
+
+              <div>
+                <p class="text-lg md:text-xl xl:text-2xl text-[var(--c4)]">
+                  Bizden haberdar olun
+                </p>
+                <p class="text-lg md:text-xl xl:text-2xl text-[var(--c4)] font-bold mb-5">
+                  e-bültene kaydol.
+                </p>
+              </div>
+              <button class="custom-btn-1 border-[var(--c4)] text-[var(--c4)]">
+                Dökümanlar
+              </button>
+            </div>
+            <div class="">
+              <div class="grid grid-cols-2 gap-5">
+                <img src="assets/img/img-1.webp" alt="#"
+                  class="border border-solid border-[var(--c1)] rounded my-auto" />
+                <img src="assets/img/img-1.webp" alt="#"
+                  class="border border-solid border-[var(--c1)] rounded my-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="bg-[var(--c5)] rounded p-8 h-full flex">
+          <div class="grid xl:grid-cols-2 gap-5 w-full">
+            <div class="">
+              <div
+                class="bg-[var(--c1)] rounded flex justify-center items-center text-center w-fit aspect-square p-4 md:p-8 text-2xl md:text-4xl text-[var(--c4)] mb-8">
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
+              <div>
+                <p class="text-lg md:text-xl xl:text-2xl text-[var(--c1)]">
+                  Kurumsal
+                </p>
+                <p class="text-lg md:text-xl xl:text-2xl text-[var(--c1)] font-bold mb-5">
+                  Logo Kiti
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <div class="flex justify-end items-end h-full">
+                <img src="assets/img/adobe.svg" alt="adobe" class="max-w-32 xl:max-w-52 mb-4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="custom-site-gap custom-container mb-0">
+    <div>
+      <!-- Footer üst kısım -->
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between gap-8 border-b border-solid border-[var(--c3)]/50 pb-8 mb-16">
+        <img src="assets/logo.svg" alt="Logo" />
+        <div class="flex gap-5 items-center">
+          <a href="/" target="_blank" class="text-[var(--c4)] text-3xl"><i
+              class="fa-brands fa-square-instagram"></i></a>
+          <a href="/" target="_blank" class="text-[var(--c4)] text-3xl"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="/" target="_blank" class="text-[var(--c4)] text-3xl"><i
+              class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="/" target="_blank" class="text-[var(--c4)] text-3xl"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer içerik -->
+      <div class="flex flex-wrap w-full justify-between gap-12">
+        <div class="w-fit max-w-[500px]">
+          <p class="text-[var(--c4)] text-2xl lg:text-4xl mb-1">
+            Memnuniyetiniz
+          </p>
+          <p class="text-[var(--c4)] text-2xl lg:text-4xl font-bold mb-8">
+            sözümüzdür
+          </p>
+          <button class="custom-btn-1 text-[var(--c4)] border-[var(--c4)]">
+            Konumumuzu Gör
+          </button>
+        </div>
+        <div class="w-fit max-w-[300px]">
+          <h2 class="text-[var(--c4)] text-xl font-semibold">Kurumsal</h2>
+          <div class="text-[var(--c4)] flex flex-col gap-8 mt-1 pt-5 border-t border-solid border-[var(--c3)]/50">
+            <a href="#">Hakkımızda</a>
+            <a href="#">Misyonumuz</a>
+            <a href="#">Üretim</a>
+            <a href="#">Başkandan</a>
+          </div>
+        </div>
+        <div class="w-fit max-w-[300px]">
+          <h2 class="text-[var(--c4)] text-xl font-semibold">
+            Site Haritası
+          </h2>
+          <div class="text-[var(--c4)] flex flex-col gap-8 mt-1 pt-5 border-t border-solid border-[var(--c3)]/50">
+            <a href="#">Kurumsal</a>
+            <a href="#">Ürünler</a>
+            <a href="#">Medya</a>
+            <a href="#">İletişim</a>
+          </div>
+        </div>
+        <div class="w-fit max-w-[300px]">
+          <h2 class="text-[var(--c4)] text-xl font-semibold">Ürünler</h2>
+          <div class="text-[var(--c4)] flex flex-col gap-8 mt-1 pt-5 border-t border-solid border-[var(--c3)]/50">
+            <a href="#">Motor Subapları</a>
+            <a href="#">Motor Gaydları</a>
+            <a href="#">Subap Yuvaları</a>
+            <a href="#">Diğer Ürünler</a>
+          </div>
+        </div>
+        <div class="w-fit max-w-[300px]">
+          <h2 class="text-[var(--c4)] text-xl font-semibold">
+            Site Haritası
+          </h2>
+          <div class="text-[var(--c4)] flex flex-col gap-8 mt-1 pt-5 border-t border-solid border-[var(--c3)]/50">
+            <a href="#">Kurumsal</a>
+            <a href="#">Ürünler</a>
+            <a href="#">Medya</a>
+            <a href="#">İletişim</a>
+          </div>
+        </div>
+        <div class="w-fit max-w-[300px]">
+          <h2 class="text-[var(--c4)] text-xl font-semibold">Bize Ulaşın</h2>
+          <div class="text-[var(--c4)] flex flex-col gap-8 mt-1 pt-5 border-t border-solid border-[var(--c3)]/50">
+            <a href="#">+90 (332) 239 06 67</a>
+            <a href="#">gunes@gunessupap.com.tr<br />gunes@gunesenginevalves.com</a>
+            <a href="#">Konya Organize Sanayi Bölgesi 9.Sokak No:24 42300 Konya/
+              TURKEY</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer alt kısım -->
+      <div class="flex justify-between border-t border-solid border-[var(--c3)]/50 py-8 mt-16">
+        <p class="text-lg text-[var(--c4)]">
+          © 2025 Gunes Subap | Her Hakkı Saklıdır.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script src="custom.js"></script>
+</body>
+
+</html>

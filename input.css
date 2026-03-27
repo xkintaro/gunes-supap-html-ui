@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --c1: #f9f9f9;
+  --c2: #e3f1f7;
+  --c3: #90b1ce;
+  --c4: #27507e;
+  --c5: #d8000c;
+  --c6: #930009;
+
+  --popup-z: 950;
+  --navbar-z: 800;
+  --navbar-h: 120px;
+
+  --default-font: "Host Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply box-border border-none outline-none list-none no-underline;
+    font-family: var(--default-font);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--c1);
+  }
+}
+
+@layer utilities {
+  .rounded {
+    border-radius: 12px;
+  }
+
+  .font-host {
+    font-family: "Host Grotesk", var(--default-font);
+  }
+
+  .font-poppins {
+    font-family: "Poppins", var(--default-font);
+  }
+
+  .font-satisfy {
+    font-family: "Satisfy", var(--default-font);
+  }
+}
+
+@layer components {
+  .custom-container {
+    @apply w-full max-w-full mx-auto px-5 2xl:px-32;
+  }
+
+  .custom-site-gap {
+    @apply my-10 xl:my-20;
+  }
+
+  .custom-btn-1 {
+    @apply bg-transparent text-[var(--c1)] text-sm border border-solid border-[var(--c1)] transition-all duration-300 h-10 px-6 rounded-md flex justify-center items-center gap-2 whitespace-nowrap;
+
+    &:not(:disabled) {
+      @apply cursor-pointer hover:brightness-110 active:scale-95;
+    }
+
+    &:disabled {
+      @apply opacity-70 cursor-default;
+    }
+  }
+
+  .custom-textbox-1 {
+    @apply bg-transparent text-[var(--c1)] text-sm border border-solid border-[var(--c1)] transition-all duration-300 h-10 px-4 w-full rounded-md;
+
+    &:not(:disabled) {
+      @apply focus:shadow-xs;
+    }
+
+    &:disabled {
+      @apply opacity-70 cursor-default;
+    }
+  }
+}
