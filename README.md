@@ -1,11 +1,9 @@
 <div align="center">
   <img src="md/logo.png" width="120" height="120" />
-  <br />
-  <br />
-
-  <p>
+  
+  <h3>
     Güneş Engine Valves
-  </p>
+  </h3>
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
