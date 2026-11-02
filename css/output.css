@@ -655,10 +655,10 @@
     background-color: transparent;
   }
   .bg-\[linear-gradient\(135deg\,rgba\(0\,0\,0\,0\.5\)\,transparent\)\,url\(\'assets\/img\/parallax\.webp\'\)\] {
-    background-image: linear-gradient(135deg,rgba(0,0,0,0.5),transparent),url('assets/img/parallax.webp');
+    background-image: linear-gradient(135deg,rgba(0,0,0,0.5),transparent),url('../images/7s7ohcb0.webp');
   }
   .bg-\[url\(assets\/img\/overlay-1\.svg\)\] {
-    background-image: url(assets/img/overlay-1.svg);
+    background-image: url(../images/overlay-1.svg);
   }
   .bg-cover {
     background-size: cover;
