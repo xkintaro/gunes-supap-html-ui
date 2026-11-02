@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>İletişim</title>
-  <link rel="stylesheet" href="output.css" />
-  <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet" href="css/output.css" />
+  <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
@@ -16,7 +16,7 @@
     <div class="custom-container flex justify-between items-center">
       <!-- Logo -->
       <a href="index.html">
-        <img src="assets/logo.svg" alt="Logo" />
+        <img src="images/logo.svg" alt="Logo" />
       </a>
 
       <!-- Mobil menü butonu -->
@@ -36,17 +36,17 @@
         <div id="dropdown-root" class="relative">
           <button id="dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu"
             class="flex items-center justify-center w-10 h-10 border border-[var(--c1)] border-solid rounded-full cursor-pointer hover:border-[var(--c5)]">
-            <img id="dropdown-caret" src="assets/flags/turkey.webp" class="w-6 h-6 rounded-full object-cover"
+            <img id="dropdown-caret" src="flags/turkey.webp" class="w-6 h-6 rounded-full object-cover"
               alt="Flag" />
           </button>
 
           <div id="dropdown-menu" role="menu" aria-labelledby="dropdown-btn"
             class="origin-top-right absolute right-0 mt-2 w-26 rounded-full bg-[var(--c1)] flex space-x-2 items-center justify-center p-2 transform opacity-0 scale-95 pointer-events-none transition-all duration-150">
-            <img role="menuitem" src="assets/flags/germany.webp" alt="#"
+            <img role="menuitem" src="flags/germany.webp" alt="#"
               class="w-6 h-6 rounded-full object-cover cursor-pointer border border-solid border-[var(--c2)]" />
-            <img role="menuitem" src="assets/flags/russia.webp" alt="#"
+            <img role="menuitem" src="flags/russia.webp" alt="#"
               class="w-6 h-6 rounded-full object-cover cursor-pointer border border-solid border-[var(--c2)]" />
-            <img role="menuitem" src="assets/flags/united-kingdom.webp" alt="#"
+            <img role="menuitem" src="flags/united-kingdom.webp" alt="#"
               class="w-6 h-6 rounded-full object-cover cursor-pointer border border-solid border-[var(--c2)]" />
           </div>
         </div>
@@ -151,7 +151,7 @@
       <!-- Footer üst kısım -->
       <div
         class="flex flex-col sm:flex-row items-center justify-between gap-8 border-b border-solid border-[var(--c3)]/50 pb-8 mb-16">
-        <img src="assets/logo.svg" alt="Logo" />
+        <img src="images/logo.svg" alt="Logo" />
         <div class="flex gap-5 items-center">
           <a href="/" target="_blank" class="text-[var(--c4)] text-3xl"><i
               class="fa-brands fa-square-instagram"></i></a>
@@ -236,7 +236,7 @@
   </section>
 
   <!-- JAVASCRIPT -->
-  <script src="custom.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
