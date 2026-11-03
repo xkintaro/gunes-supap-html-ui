@@ -1,4 +1,4 @@
-## 📷 Demo Link
+## 📷 Demo
 
 - [https://xkintaro.github.io/gunes-supap-html-ui/](https://xkintaro.github.io/gunes-supap-html-ui/)
 
